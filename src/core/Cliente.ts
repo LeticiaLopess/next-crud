@@ -1,11 +1,11 @@
-// dompinio da aplicação
+// dominio da aplicação
 
 export default class Cliente {
     #id?: string
     #nome?: string
     #idade?: number
 
-    constructor(nome:string, idade: number, id: string = null) {
+    constructor(nome:string, idade: number, id: string = '') {
         this.#nome = nome
         this.#idade = idade
         this.#id = id
