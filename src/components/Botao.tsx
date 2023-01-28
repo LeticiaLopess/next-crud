@@ -1,7 +1,7 @@
 interface BotaoProps {
     cor?: 'green' | 'blue' | 'gray'
     className?: string
-    children: any
+    children?: any
 }
 
 export default function Botao(props: BotaoProps) {
