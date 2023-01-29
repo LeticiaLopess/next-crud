@@ -19,7 +19,7 @@ export default function Home() {
     new Cliente('Bia', 45, '2'),
     new Cliente('Carlos', 23, '3'),
     new Cliente('Pedro', 54, '4'),
-
+    new Cliente('Leticia', 22, '5' )
   ]
 
   function clienteSelecionado(cliente: Cliente) {
@@ -37,7 +37,6 @@ export default function Home() {
   }
 
   function salvarCliente(cliente: Cliente) {
-    console.log(cliente)
     setVisivel('tabela')
   }
 
@@ -69,7 +68,6 @@ export default function Home() {
               clienteMudou={salvarCliente}
               cancelado={() => setVisivel('tabela')}></Formulario>
         )}
-
       </Layout>
     </div>
   )
